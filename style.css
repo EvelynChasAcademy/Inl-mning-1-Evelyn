@@ -355,3 +355,6 @@ input[type=text] {
       background-color: #3d7a77;
   }
 
+@media(max-width:400px){
+    
+}

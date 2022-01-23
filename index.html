@@ -8,7 +8,7 @@
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
- 
+ <!--Navigationsbar. Fick inspiration från "Skillthrive" på youtube. Använt mig av flex som kan ses under header i css-->
   <header><img class="logo" src="img/storelogo.png" alt="Logo">
     <nav><ul class="nav_links">
       <li><a href="#">Collection</a></li>
@@ -19,7 +19,10 @@
     </ul></nav>
     <a class="cta" href="#"><button>Go to cart</button></a> 
   </header></div>
+  <!--Här tar navigationsbar slut-->
 
+  <!--Den stora bilden och texten man möts av när man kommer in på sidan. Använt mig av många olika classer för att få till vart på sidan texten ska vara, 
+    samt vilken stil texten ska ha. Även knappen har egen css-class med hovereffekt. -->
 <section>
   <div class="container">
   <img class="img1" src="img/bakgrund.png" alt="tröja" style="width:100%;">
@@ -27,10 +30,16 @@
   <div class="bottom-right"><p class="pstyle">Some catchy selling text</p></div>
 <button class="bottom-rightbutton" id="pstyle3">SHOP NOW</button>
 </div></section>
+<!--Slut på stora bilden och texten. OBS! VILL HA HJÄLP MED RESPONSIVITET PÅ TEXTEN!-->
 
+<!-- Rubrik för olika klädesplagg. Använt mig av classes för att styla texten snyggt. -->
 <div class="centertextwhite"><h1>New arrivals</h1> <h3>Find your style in our new collection</h3> </div>
+<!-- Slut på rubrik-->
 
-
+<!-- Bilder som visar ny kollektion. Har använt mig av en rad olika metoder. Först och främst grid för att få dem att vara bredvid varandra.
+Sedan overlays och hovereffekter för att priset ska synas när man hovrar. Sedan även a-link för att man ska kunna klicka. Detta har jag strulat mest med. 
+Kollade tutorial på yt för att få hovereffekten. Men då utan grid och länk. Har försökt få ihop allting. Fortfarande problem i form av: Hela bilden är inte 
+klickbar även fast bilden och overlay är inom a-elementet. Andra problemet: Hovern är större än bilden även fast det är 100% på storlek på både overlay och image-->
 <div class="grid-container">
 <div class="image1"><a href="#">
 <img class="image1__img" src="img/model1.jpg" alt="model">
@@ -72,9 +81,13 @@
       </div></div>
 
     <br>
+
+    <!--Slut på bilder som visar ny kollektion-->
   
 <hr/>
 
+<!--Ville även prova hur man gör om man vill att texten ska vara under bilden istället för hovereffekt. Gjorde därför ett till bildsegment med bestsellers också. 
+Här använde jag mig av grid med parent och children och figure/figurecaption. Samt img och a-element. Och class samt hover för att styla texten under.-->
 <section>
   <div>><p class="centertextwhite">Trending fashion</p><h1 class="centertextwhite2">Best sellers</h1></div>
     <br>
@@ -89,9 +102,12 @@
             <figure><a href="#"><img src="img/bestseller8.jpg" alt="Bestsellermodell" class="conbsimage"></a><figurecaption class="centertextwhite3"><p>Shoes<h3>799 kr</h3></figurecaption></figure>
 
   </div>
-
-
 </div>
+
+<!--Slut på bestsellerbilder-->
+
+
+<!-- Här gjorde jag en footer med hjälp av flexbox. La även in ett form för nyhetsbrev. Har stylat om mycket med hjälp av classes men även id.-->
 <footer>
   <hr>
 <div class="parent-footer">
@@ -126,6 +142,8 @@
       <input type="text" id="email" name="email" value="example@gmail.com"><br>
       <input type="submit" value="Sign up" class="submit">
     </form>
+
+    <!-- Slut på footer-->
   
 </div>
 </footer>

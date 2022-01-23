@@ -7,6 +7,10 @@
   <title>Document</title>
   <link rel="stylesheet" href="style2.css">
 </head>
+<!-- Gjorde ett nytt CSS-dokument då jag redan hade gjort så mycket med forms på index.html på nyhetsbrevet. Ville inte förstöra det jag redan gjort. 
+  Och stilen från nyhetsbrevet passade inte på denna sida.-->
+
+  <!-- Tog med navigationsbaren från index.html-->
 <header><a href="index.html"> <img class="logo" src="img/storelogo.png" alt="Logo"></a>
     <nav><ul class="nav_links">
       <li><a href="#">Collection</a></li>
@@ -18,8 +22,13 @@
     <a class="cta" href="#"><button>Go to cart</button></a> 
   </header></div>
 <br>
+<!--Slut på navigationsbar-->
 
+<!--Breadcrumbs så att man ser vart man är på sidan, och lätt kan klicka sig tillbaka till förstasidan-->
 <div><p class="homecontact"><a href="index.html"> <strong>Home ></strong> </a> Contact</p></div>
+<!--Slut på breadcrumbs-->
+
+<!-- Formulär för att kontakta websidan. Har använt mig av textformulär, dropdownlista och submitknapp-->
   <center><div>
   <br>
     <form>
@@ -28,7 +37,7 @@
         <input type="text" id="namn" name="namn" value="Your name"><br><br>
         
     <input type="text" id="email" name="email" value="example@mail.com"><br><br>
-    <select name="fruit" id="fruit" value="Choose a topic">
+    <select name="topic" id="topic" value="Choose a topic">
         <option value="topic">Choose a topic</option>
         <option value="pear">Returns</option>
         <option value="orange">Delivery</option>
@@ -40,4 +49,6 @@
     <input type="submit" value="Send" class="submit">
     </form>
 </div></center>
+
+<!--Slut på formulär-->
 <body>
