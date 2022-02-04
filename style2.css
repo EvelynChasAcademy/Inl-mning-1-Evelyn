@@ -139,3 +139,23 @@ h1{
 }
 
 
+@media(max-width:600px){
+    .submit{
+        width: 70%;
+    }
+
+    #namn{
+        width: 70%;
+    }
+
+    #email{
+        width: 70%;
+    }
+
+    #meddelande{
+        width: 70%
+    }
+
+    #topic{
+        width: 70%;
+    }

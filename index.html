@@ -4,12 +4,20 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
+  <title>Evelyns webshop</title>
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
+
+  <!-- För tillgänligheten har jag använt mig av 1.1.1. (A) Vilket är att beskriva allt innehåll som inte är text med text. 
+  Detta kan du se på alt-texterna till alla bilder. Jag har även använt mig av 1.4.5 (AA) där jag använder text
+istället för bilder för att visa text. Detta kan du se i classen container där "Women's collection" och "Some catchy selling text" 
+inte är en del av bilden vilket hade varit enklast. Utan det är text skriven i HTML.-->
+
+
+
  <!--Navigationsbar. Fick inspiration från "Skillthrive" på youtube. Använt mig av flex som kan ses under header i css-->
-  <header><img class="logo" src="img/storelogo.png" alt="Logo">
+  <header><img class="logo" src="img/storelogo.png" alt="The store's logo">
     <nav><ul class="nav_links">
       <li><a href="#">Collection</a></li>
       <li><a href="#">Best sellers</a></li>
@@ -25,84 +33,120 @@
     samt vilken stil texten ska ha. Även knappen har egen css-class med hovereffekt. -->
 <section>
   <div class="container">
-  <img class="img1" src="img/bakgrund.png" alt="tröja" style="width:100%;">
+  <img class="img1" src="img/bakgrund.png" alt="Green background with a black t-shirt" style="width:100%;">
   <div class="bottom-right2"><p class="pstyle2">Women's COLLECTION </p></div>
   <div class="bottom-right"><p class="pstyle">Some catchy selling text</p></div>
 <button class="bottom-rightbutton" id="pstyle3">SHOP NOW</button>
 </div></section>
-<!--Slut på stora bilden och texten. OBS! VILL HA HJÄLP MED RESPONSIVITET PÅ TEXTEN!-->
-
+<!--Slut på stora bilden och texten.-->
+<br>
 <!-- Rubrik för olika klädesplagg. Använt mig av classes för att styla texten snyggt. -->
 <div class="centertextwhite"><h1>New arrivals</h1> <h3>Find your style in our new collection</h3> </div>
 <!-- Slut på rubrik-->
 
-<!-- Bilder som visar ny kollektion. Har använt mig av en rad olika metoder. Först och främst grid för att få dem att vara bredvid varandra.
-Sedan overlays och hovereffekter för att priset ska synas när man hovrar. Sedan även a-link för att man ska kunna klicka. Detta har jag strulat mest med. 
-Kollade tutorial på yt för att få hovereffekten. Men då utan grid och länk. Har försökt få ihop allting. Fortfarande problem i form av: Hela bilden är inte 
-klickbar även fast bilden och overlay är inom a-elementet. Andra problemet: Hovern är större än bilden även fast det är 100% på storlek på både overlay och image-->
-<div class="grid-container">
-<div class="image1"><a href="#">
-<img class="image1__img" src="img/model1.jpg" alt="model">
-<div class="image1__overlay">
-  <div class="image1__title">Coat set</div></a>
-  <p class="image1__description">
-    1599Kr
-  </p>
-</div>
-</div> 
+<!--Gjorde om dessa bilder så att de ej längre hade hovereffekt. Lättare när man går ner till mobileview att se priserna under. Samt att dessa bilder nu matchar
+bättre med de under. Klasserna heter Mobile eftersom jag först endast tänkte ha det så i mobile, men ändrade mig eftersom det passade bättre in på sidan när det matchade
+bilderna under-->
+<br>
+<section>
+    <div class="mobilecontainer">
+<div class="mobilechild">
+      <figure><a href="#"><img src="img/model1.jpg" alt="Model woman with grey coat and trousers on. Standing casually in full view." class="mobilechild"></a>
+        <figurecaption class="centertextwhite3">
+          <p>Coat set</p><h3>1599 kr</h3>
+        </figurecaption>
+      </figure></div>
+      <div class="mobilechild">
+        <figure><a href="#"><img src="img/model2.jpg" alt="Model woman with grey coat and grey trousers with white details at the bottom. Wearing high plateu heels. Raising one arm, looking happy in full view." class="mobilechild"></a>
+          <figurecaption class="centertextwhite3">
+            <p>Coat set</p><h3>1599 kr</h3>
+          </figurecaption>
+        </figure></div>
+        <div class="mobilechild">
+          <figure><a href="#"><img src="img/model3.jpg" alt="Model woman with grey coat. Looking in the distance. Half view from hips and up." class="mobilechild"></a>
+            <figurecaption class="centertextwhite3">
+              <p>Coat set</p><h3>1599 kr</h3>
+            </figurecaption>
+          </figure></div>
+          <div class="mobilechild">
+            <figure><a href="#"><img src="img/model4.jpg" alt="Full view of model woman wearing a bright yellow flowy dress with flowers on it." class="mobilechild"></a>
+              <figurecaption class="centertextwhite3">
+                <p>Coat set</p><h3>1599 kr</h3>
+              </figurecaption>
+            </figure></div>
 
-<div class="image1"><a href="#">
-  <img class="image1__img"  src="img/model2.jpg" alt="model">
-  <div class="image1__overlay">
-    <div class="image1__title">Pants</div></a>
-    <p class="image1__description">
-      599Kr
-    </p>
-  </div>
-  </div>
-
-  <div class="image1"><a href="#">
-    <img class="image1__img"  src="img/model3.jpg" alt="model">
-    <div class="image1__overlay">
-      <div class="image1__title">Coat</div></a>
-      <p class="image1__description">
-        799Kr
-      </p>
-    </div>
-    </div>
-    <div class="image1"><a href="#">
-      <img class="image1__img"  src="img/model5.jpg" alt="model">
-      <div class="image1__overlay">
-        <div class="image1__title">Dress</div></a>
-        <p class="image1__description">
-          999Kr
-        </p>
-      </div>
-      </div></div>
-
-    <br>
-
-    <!--Slut på bilder som visar ny kollektion-->
   
+  </div>
+</section>
 <hr/>
 
-<!--Ville även prova hur man gör om man vill att texten ska vara under bilden istället för hovereffekt. Gjorde därför ett till bildsegment med bestsellers också. 
-Här använde jag mig av grid med parent och children och figure/figurecaption. Samt img och a-element. Och class samt hover för att styla texten under.-->
-<section>
-  <div>><p class="centertextwhite">Trending fashion</p><h1 class="centertextwhite2">Best sellers</h1></div>
-    <br>
-<div class="grid-conbs">
- <figure><a href="#"><img src="img/bestseller1.jpg" alt="Bestsellermodell" class="conbsimage"></a><figurecaption class="centertextwhite3"><p>Jacket<h3>599 kr</h3></figurecaption></figure>
- <figure><a href="#"><img src="img/bestseller2.jpg" alt="Bestsellermodell" class="conbsimage"></a><figurecaption class="centertextwhite3"><p>Coat<h3>999 kr</h3></figurecaption></figure>
-  <figure><a href="#"><img src="img/bestseller7.jpg" alt="Bestsellermodell" class="conbsimage"></a><figurecaption class="centertextwhite3"><p>Pants<h3>199 kr</h3></figurecaption></figure>
-    <figure><a href="#"><img src="img/bestseller4.jpg" alt="Bestsellermodell" class="conbsimage"></a><figurecaption class="centertextwhite3"><p>Shirt<h3>299 kr</h3></figurecaption></figure>
-      <figure><a href="#"><img src="img/bestseller5.jpg" alt="Bestsellermodell" class="conbsimage"></a><figurecaption class="centertextwhite3"><p>Bra<h3>299 kr</h3></figurecaption></figure>
-        <figure><a href="#"><img src="img/bestseller6.jpg" alt="Bestsellermodell" class="conbsimage"></a><figurecaption class="centertextwhite3"><p>Jacket<h3>499 kr</h3></figurecaption></figure>
-          <figure><a href="#"><img src="img/bestseller3.jpg" alt="Bestsellermodell" class="conbsimage"></a><figurecaption class="centertextwhite3"><p>Pants<h3>599 kr</h3></figurecaption></figure>
-            <figure><a href="#"><img src="img/bestseller8.jpg" alt="Bestsellermodell" class="conbsimage"></a><figurecaption class="centertextwhite3"><p>Shoes<h3>799 kr</h3></figurecaption></figure>
+<!--Här använde jag mig av grid med parent och children och figure/figurecaption. Samt img och a-element. Och class samt hover för att styla texten under.-->
 
-  </div>
+<br><section>
+  <div><h6 class="centertextwhite">Trending fashion</h6><h1 class="centertextwhite2">Best sellers</h1></div>
+    <br>
+
+<div class="grid-conbs">
+  <div class="conbsimage">
+  <figure><a href="#"><img src="img/bestseller1.jpg" alt="Woman sitting outside with jeans trousers and jeans jacket. The jacket has fluffy pink arms and neck." class="conbsimage"></a>
+    <figurecaption class="centertextwhite3">
+      <p>Jacket<h3>599 kr</h3>
+    </figurecaption>
+  </figure>
 </div>
+<div class="conbsimage">
+<figure><a href="#"><img src="img/bestseller2.jpg" alt="Model woman with view from thighs and up. Standing half in shadows. Wearing brown coat with a black belt in the waist." class="conbsimage"></a>
+  <figurecaption class="centertextwhite3">
+    <p>Coat<h3>999 kr</h3>
+  </figurecaption>
+</figure>
+</div>
+<div class="conbsimage">
+<figure><a href="#"><img src="img/bestseller7.jpg" alt="Woman sitting on a small pillar. Wearing pink elbow length gloves, a white cropped spaghetti top and cosy long pink pants." class="conbsimage"></a>
+  <figurecaption class="centertextwhite3">
+    <p>Pants<h3>199 kr</h3>
+  </figurecaption>
+</figure>
+</div>
+<div class="conbsimage">
+<figure><a href="#"><img src="img/bestseller4.jpg" alt="Woman standing facing camera. View from knees and up. wearing an open pink shirt with a purple top underneath. Black flowy pants." class="conbsimage"></a>
+  <figurecaption class="centertextwhite3">
+    <p>Shirt<h3>299 kr</h3>
+  </figurecaption>
+</figure>
+</div>
+<div class="conbsimage">
+<figure><a href="#"><img src="img/bestseller5.jpg" alt="woman standing leaning with one arm against a door handle. View from hips and up. Wearing a white open shirt with a white lace brah underneath." class="conbsimage"></a>
+  <figurecaption class="centertextwhite3">
+    <p>Bra<h3>299 kr</h3>
+  </figurecaption>
+</figure>
+</div>
+<div class="conbsimage">
+<figure><a href="#"><img src="img/bestseller6.jpg" alt="Two women standing looking to the right. View from knees and up. Both wearing coats. One of them a pink one, and the other a green one." class="conbsimage"></a>
+  <figurecaption class="centertextwhite3">
+    <p>Jacket<h3>499 kr</h3>
+  </figurecaption>
+</figure>
+</div>
+<div class="conbsimage">
+<figure><a href="#"><img src="img/bestseller3.jpg" alt="Woman in full view leaning against a red wall. Wearing a grey waistcoat with a blue jacket underneath. Grey trousers with white details on the bottom." class="conbsimage"></a>
+  <figurecaption class="centertextwhite3">
+    <p>Pants<h3>599 kr</h3>
+  </figurecaption>
+</figure>
+</div>
+<div class="conbsimage">
+<figure><a href="#"><img src="img/bestseller8.jpg" alt="Woman in full view sitting on a barrel. Wearing white boots with black details, and a white sweater." class="conbsimage"></a>
+  <figurecaption class="centertextwhite3">
+    <p>Shoes<h3>799 kr</h3>
+  </figurecaption>
+</figure>
+</div>
+
+</div>
+</section>
+<br>
 
 <!--Slut på bestsellerbilder-->
 
